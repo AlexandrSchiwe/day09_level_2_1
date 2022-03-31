@@ -1,0 +1,48 @@
+
+
+li {
+    line-height: 1.5em;
+}
+
+h1 {
+    border-top: 1px solid grey;
+    padding-top: 20px;
+}
+
+section {
+    border: 0.3rem solid black;
+    font-size: 1.5rem;
+}
+
+ul {
+    padding-inline-start: 1.2em;
+}
+
+section ul:first-child {
+    font-size: 0.8em;
+}
+
+li {
+    list-style-type: none;
+}
+
+section ul li:first-child ul li:first-child ul li::before {
+    content: "🐶";
+}
+
+section ul li:first-child ul li:nth-child(2) ul li::before {
+    content: "🐱";
+}
+
+section ul li:nth-last-of-type(2) ul li:first-child ul li::before {
+    content: "🦜";
+}
+
+section ul li:nth-child(3) ul li:first-child ul li::before {
+    content: "🐍";
+}
+
+section ul li:nth-child(3) ul li:nth-child(2) ul li::before {
+    content: "🦎";
+}
+
